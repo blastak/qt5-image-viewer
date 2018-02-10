@@ -1,5 +1,7 @@
 # qt5-image-viewer
 
+Simple image viewer example using Qt5
+
 ## Development environment
 
 Qt Creator 4.2.1 (Qt 5.8.0)
