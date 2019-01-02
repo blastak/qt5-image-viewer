@@ -10,6 +10,8 @@ MyGraphicsView::MyGraphicsView(QWidget *parent)
 
 	isResized = false;
 	isLandscape = false;
+
+    setDragMode(QGraphicsView::ScrollHandDrag);
 }
 
 MyGraphicsView::~MyGraphicsView()

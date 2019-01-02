@@ -32,7 +32,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->m_graphicsView->setScene(m_graphicsScene);
 
-    ui->statusBar->showMessage("ready", 5000);
+    ui->statusBar->showMessage("ready", 0);
 }
 
 MainWindow::~MainWindow()
@@ -68,7 +68,7 @@ void MainWindow::onPressLoadImage()
 
     ui->m_graphicsView->viewFit();
 
-    ui->statusBar->showMessage("image loaded", 3000);
+    ui->statusBar->showMessage("image loaded", 0);
 }
 
 void MainWindow::onPressSaveImage()
@@ -99,7 +99,7 @@ void MainWindow::onPressSaveImage()
     }
     writer.write(img);
 
-    ui->statusBar->showMessage("image saved", 3000);
+    ui->statusBar->showMessage("image saved", 0);
 }
 
 void MainWindow::onPressFitWindow()
